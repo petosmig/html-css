@@ -1,0 +1,128 @@
+.root {
+    - White: hsl(0, 0%, 100%)
+
+    - Stone 100: 
+    - Stone 150: hsl(30, 18%, 87%)
+    - Stone 600: hsl(30, 10%, 34%)
+    - Stone 900: hsl(24, 5%, 18%)
+    
+    - Brown 800: hsl(14, 45%, 36%)
+    
+    - Rose 800: hsl(332, 51%, 32%)
+    - Rose 50: hsl(330, 100%, 98%)
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: hsl(30, 54%, 90%);
+}
+body{
+    margin: 5rem ;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   background-color:hsl(0, 0%, 100%) ;
+   border-radius: 15px;
+}
+.box{
+    padding: 25px;
+}
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+h1{
+    font-family: "young serif", serif;
+    font-weight: 400;
+    margin: 20px 0 7.5px 0
+}
+h2{
+    font-family: "young serif", serif;
+    font-weight: 400;
+    margin: 20px 0 7.5px 0;
+    padding: 0;
+    color:hsl(14, 45%, 36%) ;
+}
+p{
+    font-family: "outfit", serif;
+    margin: 0;
+    padding: 10px 0;
+}
+.innerbox{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:hsl(330, 100%, 98%) ;
+}
+.innerbox span{
+    font-family: outfit, sans-serif;
+    font-weight: 800;
+    color:hsl(332, 51%, 32%) ;
+    filter: brightness(1.1);
+}
+ul > li, ol > li{
+    font-family: outfit, sans-serif, "arial";
+    margin: 0 20px;
+    padding: 0;
+    list-style-position: outside;
+    padding: 7.5px 0 7.5px 20px;
+    color:hsl(14, 45%, 36%)
+}
+.innerbox ul > li {
+    font-weight: bold;
+    font-size: 0.75rem;
+    color:hsl(332, 51%, 32%)
+}
+.ingredients ul>li {
+    font-weight: bold;
+    font-size: 0.75;
+    
+}
+ol > li {
+    color: hsl(332, 51%, 32%);
+}
+section:nth-child(2),section:nth-child(3){
+    padding-bottom: 25px;
+    border-bottom: 2px solid hsl(30, 18%, 87%);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: outfit, sans-serif;
+}
+td > th{
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: hsl(24, 5%, 18%);
+}
+tr {
+    border-bottom: 1px solid;
+}
+tr > th {
+    text-align: left;
+    font-weight: 800;
+    color: hsl(14, 45%, 36%);
+}
+@media screen and (min-width: 375px)and( max-width:1440px) {
+
+
+    
+    body{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    }
